@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from 'react-ga';
 
 // reactstrap components
 import {
@@ -21,8 +22,14 @@ function CatalogSection(props) {
     setTeamId(teamId);
     setTeamFilter(true);
     setTeamName(teamName);
+
+    ReactGA.event({
+      category: "Filters",
+      action: "Filtro por",
+      label: teamId + " " + teamName
+     });
+
   }
-  console.log("render");
 
   function handleCancelTeamFilter(){
     setTeamFilter(false);

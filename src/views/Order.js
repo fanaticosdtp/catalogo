@@ -1,4 +1,5 @@
 import React from "react";
+import ReactGA from 'react-ga';
 
 import { Container } from "reactstrap";
 
@@ -25,6 +26,19 @@ function Order(props) {
   const [client] = React.useState(props.location.state.client);
   const [cartItems] = React.useState(props.location.state.cartItems.orderCartItems);
 
+  function sendMetrics(){
+
+  cartItems.forEach( (item) => {
+
+    for (var i = 0; i < item.Cantidad; i++) {
+      ReactGA.event({
+        category: "Products",
+        action: "Solicito producto",
+        label: item.Id + " " + item.Nombre + " " + item.IdStock.IdTalle.Nombre
+       });
+    }
+  })}
+
   if(!requested){
 
     setRequested(true);
@@ -49,6 +63,7 @@ function Order(props) {
             store.dispatch(clearStore());
             setSpinner(false);
             setError(false);
+            sendMetrics();
           }},
         (error) => {
           setSpinner(false);
