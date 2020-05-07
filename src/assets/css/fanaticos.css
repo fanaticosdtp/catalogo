@@ -5,6 +5,24 @@
   font-style: normal;
 }
 
+.navbar .navbar-nav .nav-link:not(.btn) i.fas + p, .navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons + p {
+    margin-left: 3px;
+}
+
+.navbar .navbar-nav .nav-link:not(.btn) i.fas, .navbar .navbar-nav .nav-link:not(.btn) i.now-ui-icons {
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+    text-align: center;
+    width: 21px;
+}
+
+@media screen and (max-width: 991px){
+
+.navbar-nav .nav-link i.fas, .navbar-nav .nav-link i.now-ui-icons {
+    opacity: .5;
+}}
+
 .spinner{
   margin-top: 10%;
   margin-bottom: 10%;

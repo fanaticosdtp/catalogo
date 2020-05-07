@@ -80,6 +80,19 @@ function CatalogNavbar() {
                   Follow us on Instagram
                 </UncontrolledTooltip>
               </NavItem>
+              <NavItem>
+                <NavLink
+                  href="tel:3515557925"
+                  target="_blank"
+                  id="phone-tooltip"
+                >
+                  <i className="fas fa-phone-square"></i>
+                  <p className="d-lg-none d-xl-none">Teléfono</p>
+                </NavLink>
+                <UncontrolledTooltip target="#phone-tooltip">
+                  3515557925
+                </UncontrolledTooltip>
+              </NavItem>
             </Nav>
           </Collapse>
         </Container>
