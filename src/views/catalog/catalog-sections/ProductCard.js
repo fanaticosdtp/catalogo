@@ -15,7 +15,7 @@ function ProductButton(params) {
       <>
       <Link to={params.item.linkTo}>
         <Button className="btn-round" color="info" type="button" size="lg" id={params.item.Id}>
-          <i className="now-ui-icons sport_user-run"></i> Pedir
+          <i className="now-ui-icons sport_user-run"></i> Ver
         </Button>
       </Link>
       </>

@@ -68,7 +68,7 @@ function CartSection(props) {
                     <div className="row">
                       <div className="p-2">
                         <div className="ml-3 d-inline-block align-middle">
-                          <h2 className="mb-0 text-dark d-inline-block align-middle"><strong>Total: </strong>${total}</h2>
+                          <h2 className="mb-0 text-dark d-inline-block align-middle"><strong>Total: </strong>${total} + envío</h2>
                         </div>
                       </div>
                     </div>
