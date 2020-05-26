@@ -1,3 +1,5 @@
 # catalogo
 
-My first node.js. It works as back end for an online catalog developed for a clothing company.
+Web Page that works as a catalog for a clothing company. It allows costumers to navigate trought the products list, filter, watch availability, add to the char and finally make an order.
+
+You can explore it [here](https://fanaticosdtp.github.io/catalogo/index)
