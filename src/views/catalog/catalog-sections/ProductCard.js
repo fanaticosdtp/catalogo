@@ -23,8 +23,8 @@ function ProductButton(params) {
   }
   return (
     <>
-      <Button className="btn-round btn-disabled" color="danger" type="button" size="lg" id={params.item.Id} disabled={true} >
-        <i className="now-ui-icons ui-1_simple-remove"></i> Sin Stock
+      <Button className="btn-round btn-disabled" color="info" type="button" size="lg" id={params.item.Id} disabled={true} >
+        <i className="now-ui-icons ui-1_simple-remove"></i> Consultar Stock
       </Button>
     </>
   );
